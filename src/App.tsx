@@ -14,7 +14,7 @@ function App() {
         </a>
       </div>
       <h1>Wops ! Look like I'm not done yet.</h1>
-      <h2>Website is coming...</h2>
+      <h2>Website is coming....</h2>
         <p>
           Come back later.
         </p>
