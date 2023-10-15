@@ -5,12 +5,14 @@ import theme from "../../../styles/theme";
 const AboutContainer = styled.section({
   display: "flex",
   flexDirection: "column",
+  margin: `${theme.space.large} 0`,
 });
 
 const Content = styled.div({
   display: "flex",
   flexDirection: "row",
   justifyContent: "space-between",
+  width: "100%",
 });
 
 const HeadingQuartiary = styled.div({
@@ -25,16 +27,28 @@ const HeadingSecondary = styled.h2({
   fontWeight: theme.text.heading_2.fontWeight,
 });
 
+const IllustrationPart = styled.div({
+  display: "flex",
+  height: "100%",
+  width: "50%",
+});
+
+const TextPart = styled.div({
+  display: "flex",
+  flexDirection: "column",
+  width: "50%",
+});
+
 const About = () => {
   return (
     <AboutContainer>
       <HeadingSecondary>About me</HeadingSecondary>
       <Content>
-        <div>
+        <IllustrationPart>
           <AstronautIllustration />
-        </div>
-        <div>
-          <h4>Bonjour !</h4>
+        </IllustrationPart>
+        <TextPart>
+          <HeadingQuartiary>Bonjour !</HeadingQuartiary>
           <p>
             My name is Philippe, a 28-year-old web developer hailing from the
             beautiful coastal town of Brest, France.
@@ -53,7 +67,7 @@ const About = () => {
             I can't wait to explore new horizons and immerse myself in the
             vibrant culture.
           </p>
-        </div>
+        </TextPart>
       </Content>
     </AboutContainer>
   );

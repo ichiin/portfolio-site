@@ -21,21 +21,21 @@ const HomeContainer = styled.section({
   alignItems: "center",
   display: "flex",
   flexDirection: "row",
-  height: "800px",
   justifyContent: "space-between",
+  marginBottom: theme.space.large,
+  width: "100%",
 });
 
 const IllustrationPart = styled.div({
   display: "flex",
-  flex: 1,
   height: "100%",
-  width: "100%",
+  width: "60%",
 });
 
 const TextPart = styled.div({
   display: "flex",
-  flex: 1,
   flexDirection: "column",
+  width: "40%",
 });
 
 const Home = () => {

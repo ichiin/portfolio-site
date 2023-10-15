@@ -5,7 +5,11 @@ const theme = {
         gradient: `linear-gradient(180deg, ${colors.black} 0%, ${colors.black_lighter} 100%)`,
     },
     space: {
+        xsmall: '6px',
+        small: '12px',
         medium: '24px',
+        large: '40px',
+        xlarge: '60px',
     },
     text: {
         heading_1: {

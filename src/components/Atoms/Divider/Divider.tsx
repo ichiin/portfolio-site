@@ -21,6 +21,7 @@ const Container = styled.div<DividerProps>(
 );
 
 const Line = styled.hr({
+  borderWidth: "1px 0",
   margin: 0,
   width: "150px",
 });
