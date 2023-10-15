@@ -12,7 +12,7 @@ const HeadingPrimaryAccent = styled.span({
   color: colors.primary,
 });
 
-const HeadingSecondary = styled.h3({
+const HeadingTertiary = styled.h3({
   fontFamily: theme.text.heading_3.fontFamily,
   fontSize: theme.text.heading_3.fontSize,
 });
@@ -42,13 +42,13 @@ const Home = () => {
   return (
     <HomeContainer>
       <TextPart>
-        <HeadingSecondary>Hi</HeadingSecondary>
+        <HeadingTertiary>Hi</HeadingTertiary>
         <HeadingPrimary>
           I'm <HeadingPrimaryAccent>Philippe</HeadingPrimaryAccent>
         </HeadingPrimary>
-        <HeadingSecondary>
+        <HeadingTertiary>
           Turning concepts into a <br /> code-driven reality.
-        </HeadingSecondary>
+        </HeadingTertiary>
       </TextPart>
       <IllustrationPart>
         <ProgrammingIllustration />

@@ -4,6 +4,7 @@ import theme from "../../styles/theme";
 import { colors } from "../../styles/colors";
 import Home from "./Sections/Home";
 import Divider from "../../components/Atoms/Divider/Divider";
+import About from "./Sections/About";
 
 const AppContainer = styled.div({
   alignItems: "flex-start",
@@ -20,7 +21,9 @@ function App() {
     <AppContainer>
       <Header />
       <Home />
-      <Divider />
+      <Divider position='left' />
+      <About />
+      <Divider position='right' />
     </AppContainer>
   );
 }
