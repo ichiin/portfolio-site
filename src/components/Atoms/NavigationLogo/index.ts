@@ -1,0 +1,1 @@
+export { default as NavigationLogo} from './NavigationLogo'

@@ -1,8 +1,6 @@
 import styled from "@emotion/styled";
-import Logo from "../../../assets/logo.svg?react";
-import NavigationItem from "../../../components/Atoms/NavigationItem/NavigationItem";
-import NavigationList from "../../../components/Molecules/NavigationList/NavigationList";
-import NavigationLogo from "../../../components/Atoms/NavigationLogo/NavigationLogo";
+import Logo from "@/assets/logo.svg?react";
+import { NavigationItem, NavigationList, NavigationLogo } from "@/components";
 
 const Container = styled.header({
   alignItems: "center",

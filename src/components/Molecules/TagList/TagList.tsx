@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
-import Tag from "../../Atoms/Tag/Tag";
+import { Tag } from "@/components";
 import { v4 as uuidv4 } from "uuid";
-import theme from "../../../styles/theme";
+import { theme } from "@/styles";
 
 interface TagListProps {
   tags: string[];

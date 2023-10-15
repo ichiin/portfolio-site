@@ -1,12 +1,7 @@
 import styled from "@emotion/styled";
-import Header from "./Sections/Header";
-import theme from "../../styles/theme";
-import { colors } from "../../styles/colors";
-import Home from "./Sections/Home";
-import Divider from "../../components/Atoms/Divider/Divider";
-import About from "./Sections/About";
-import Projects from "./Sections/Projects";
-import Footer from "./Sections/Footer";
+import { About, Footer, Header, Home, Projects } from "./sections";
+import { colors, theme } from "@/styles";
+import { Divider } from "@/components";
 
 const AppContainer = styled.div({
   alignItems: "flex-start",

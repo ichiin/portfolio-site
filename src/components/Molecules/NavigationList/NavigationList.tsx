@@ -1,5 +1,5 @@
-import theme from "../../../styles/theme";
-import { NavigationItemProps } from "../../Atoms/NavigationItem/NavigationItem";
+import { theme } from "@/styles";
+import { NavigationItemProps } from "@/components";
 import styled from "@emotion/styled";
 
 interface NavigationListProps {

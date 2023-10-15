@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
-import AstronautIllustration from "../../../assets/astronaut_illustration.svg?react";
-import theme from "../../../styles/theme";
+import AstronautIllustration from "@assets/astronaut_illustration.svg?react";
+import { theme } from "@/styles";
 
 const AboutContainer = styled.section({
   display: "flex",

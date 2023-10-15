@@ -1,8 +1,8 @@
 import { ReactNode } from "react";
-import Label from "../Atoms/Label/Label";
-import TagList from "../Molecules/TagList/TagList";
+import Label from "../../Atoms/Label/Label";
+import TagList from "../../Molecules/TagList/TagList";
 import styled from "@emotion/styled";
-import theme from "../../styles/theme";
+import theme from "../../../styles/theme";
 
 interface CardProps {
   href: string;

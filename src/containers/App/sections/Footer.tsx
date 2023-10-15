@@ -1,8 +1,8 @@
 import styled from "@emotion/styled";
-import IconLinkedin from "../../../assets/linkedin_icon.svg?react";
-import IconGithub from "../../../assets/github_icon.svg?react";
-import IconTwitter from "../../../assets/twitter_x_icon.svg?react";
-import theme from "../../../styles/theme";
+import IconLinkedin from "@/assets/linkedin_icon.svg?react";
+import IconGithub from "@/assets/github_icon.svg?react";
+import IconTwitter from "@/assets/twitter_x_icon.svg?react";
+import { theme } from "@/styles";
 
 const FooterContainer = styled.footer({
   display: "flex",

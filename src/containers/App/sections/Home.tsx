@@ -1,7 +1,6 @@
 import styled from "@emotion/styled";
-import ProgrammingIllustration from "../../../assets/programming_illustration.svg?react";
-import theme from "../../../styles/theme";
-import { colors } from "../../../styles/colors";
+import ProgrammingIllustration from "@/assets/programming_illustration.svg?react";
+import { colors, theme } from "@/styles";
 
 const HeadingPrimary = styled.h1({
   fontFamily: theme.text.heading_1.fontFamily,

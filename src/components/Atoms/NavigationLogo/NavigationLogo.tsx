@@ -1,7 +1,6 @@
 import styled from "@emotion/styled";
-import { colors } from "../../../styles/colors";
+import { colors, theme } from "@/styles";
 import { ReactNode } from "react";
-import theme from "../../../styles/theme";
 
 interface NavigationLogoProps {
   href: string;
