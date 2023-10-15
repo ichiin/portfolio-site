@@ -8,6 +8,18 @@ const theme = {
         medium: '24px',
     },
     text: {
+        heading_1: {
+            color: colors.white,
+            fontFamily: 'Bitter',
+            fontSize: '48px',
+            fontWeight: '700',
+        },
+        heading_3: {
+            color: colors.white,
+            fontFamily: 'Bitter',
+            fontSize: '24px',
+            fontWeight: '400',
+        },
         primary: colors.primary,
         secondary: colors.white,
     }

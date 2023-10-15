@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 import Header from "./Sections/Header";
 import theme from "../../styles/theme";
 import { colors } from "../../styles/colors";
+import Home from "./Sections/Home";
 
 const AppContainer = styled.div({
   background: theme.background.gradient,
@@ -14,6 +15,7 @@ function App() {
   return (
     <AppContainer>
       <Header />
+      <Home />
     </AppContainer>
   );
 }
