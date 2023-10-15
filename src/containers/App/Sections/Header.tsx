@@ -5,6 +5,7 @@ import NavigationList from "../../../components/Molecules/NavigationList/Navigat
 import NavigationLogo from "../../../components/Atoms/NavigationLogo/NavigationLogo";
 
 const Container = styled.header({
+  alignItems: "center",
   display: "flex",
   flexWrap: "nowrap",
   justifyContent: "space-between",
