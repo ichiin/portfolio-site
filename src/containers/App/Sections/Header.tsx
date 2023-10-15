@@ -9,6 +9,7 @@ const Container = styled.header({
   display: "flex",
   flexWrap: "nowrap",
   justifyContent: "space-between",
+  width: "100%",
 });
 
 const Header = ({}) => {
