@@ -16,7 +16,7 @@ const theme = {
             color: colors.white,
             fontFamily: 'Bitter',
             fontSize: '48px',
-            fontWeight: '700',
+            fontWeight: '400',
         },
         heading_2: {
             color: colors.white,
@@ -28,7 +28,7 @@ const theme = {
             color: colors.white,
             fontFamily: 'Bitter',
             fontSize: '24px',
-            fontWeight: '400',
+            fontWeight: '300',
         },
         heading_4: {
             color: colors.white,

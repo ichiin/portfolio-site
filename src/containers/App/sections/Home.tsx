@@ -5,15 +5,20 @@ import { colors, theme } from "@/styles";
 const HeadingPrimary = styled.h1({
   fontFamily: theme.text.heading_1.fontFamily,
   fontSize: theme.text.heading_1.fontSize,
+  fontWeight: theme.text.heading_1.fontWeight,
+  margin: `${theme.space.small} 0px`,
 });
 
 const HeadingPrimaryAccent = styled.span({
   color: colors.primary,
+  fontWeight: 700,
 });
 
 const HeadingTertiary = styled.h3({
   fontFamily: theme.text.heading_3.fontFamily,
   fontSize: theme.text.heading_3.fontSize,
+  fontWeight: theme.text.heading_3.fontWeight,
+  margin: 0,
 });
 
 const HomeContainer = styled.section({
@@ -41,7 +46,7 @@ const Home = () => {
   return (
     <HomeContainer>
       <TextPart>
-        <HeadingTertiary>Hi</HeadingTertiary>
+        <HeadingTertiary>Hi,</HeadingTertiary>
         <HeadingPrimary>
           I'm <HeadingPrimaryAccent>Philippe</HeadingPrimaryAccent>
         </HeadingPrimary>
