@@ -15,7 +15,7 @@ interface CardProps {
 const CardContainer = styled.div({
   display: "flex",
   flexDirection: "row",
-  gap: theme.space.medium,
+  gap: theme.space.large,
 });
 
 const Data = styled.div({
@@ -25,7 +25,7 @@ const Data = styled.div({
 });
 
 const LabelContainer = styled.div({
-  marginBottom: theme.space.xsmall,
+  marginBottom: theme.space.small,
 });
 
 const PreviewContainer = styled.div({
@@ -36,12 +36,13 @@ const PreviewContainer = styled.div({
 });
 
 const Preview = styled.img({
+  borderRadius: "8px",
   height: "100%",
   width: "100%",
 });
 
 const TagListContainer = styled.div({
-  marginBottom: theme.space.small,
+  marginBottom: theme.space.medium,
 });
 
 const Card = ({ href, icon, label, src, tags }: CardProps) => {

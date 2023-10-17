@@ -36,6 +36,12 @@ const theme = {
             fontSize: '16px',
             fontWeight: '600',
         },
+        subtitle: {
+            color: colors.white,
+            fontFamily: 'Bitter',
+            fontSize: '16px',
+            fontWeight: '300',
+        },
         primary: colors.primary,
         secondary: colors.white,
     }

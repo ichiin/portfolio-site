@@ -13,7 +13,10 @@ const LabelContainer = styled.div({
   display: "flex",
 });
 
-const LabelText = styled.span({});
+const LabelText = styled.span({
+  fontFamily: theme.text.heading_4.fontFamily,
+  fontSize: theme.text.heading_4.fontSize,
+});
 
 const LabelIcon = styled.div({
   marginLeft: theme.space.small,
