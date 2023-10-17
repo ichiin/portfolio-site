@@ -26,7 +26,6 @@ const HomeContainer = styled.section({
   display: "flex",
   flexDirection: "row",
   justifyContent: "space-between",
-  marginBottom: theme.space.large,
   width: "100%",
 });
 

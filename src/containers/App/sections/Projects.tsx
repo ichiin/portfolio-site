@@ -16,7 +16,6 @@ const HeadingSecondary = styled.h2({
 const ProjectContainer = styled.section({
   display: "flex",
   flexDirection: "column",
-  margin: `${theme.space.large} 0`,
 });
 
 const ProjectList = styled.div({

@@ -10,7 +10,7 @@ const AppContainer = styled.div({
   display: "flex",
   flexDirection: "column",
   minHeight: "100vh",
-  padding: theme.space.medium,
+  padding: theme.space.large,
 });
 
 function App() {

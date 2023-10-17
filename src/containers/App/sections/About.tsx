@@ -5,7 +5,6 @@ import { theme } from "@/styles";
 const AboutContainer = styled.section({
   display: "flex",
   flexDirection: "column",
-  margin: `${theme.space.large} 0`,
 });
 
 const Content = styled.div({

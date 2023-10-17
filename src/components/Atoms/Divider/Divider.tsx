@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { colors } from "@/styles";
+import { colors, theme } from "@/styles";
 
 interface DividerProps {
   position: "left" | "center" | "right";
@@ -8,6 +8,7 @@ interface DividerProps {
 const Container = styled.div<DividerProps>(
   {
     display: "flex",
+    margin: `${theme.space.large} 0px`,
     width: "100%",
   },
   (props) => ({
