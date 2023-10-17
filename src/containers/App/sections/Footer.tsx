@@ -14,8 +14,8 @@ const FooterContainer = styled.footer({
 const FooterEmpty = styled.div({ flex: 1 });
 
 const FooterIcon = styled.a({
-  height: "32px",
-  width: "32px",
+  height: "48px",
+  width: "48px",
 });
 
 const FooterPersonalData = styled.div({
@@ -26,8 +26,10 @@ const FooterPersonalData = styled.div({
 });
 
 const FooterSocials = styled.div({
+  alignItems: "center",
   display: "flex",
   flex: 1,
+  justifyContent: "center",
   gap: theme.space.medium,
 });
 
