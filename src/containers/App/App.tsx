@@ -13,7 +13,7 @@ const AppContainer = styled.div({
   padding: theme.space.large,
 });
 
-function App() {
+const App = () => {
   return (
     <AppContainer>
       <Header />
@@ -26,6 +26,6 @@ function App() {
       <Footer />
     </AppContainer>
   );
-}
+};
 
 export default App;

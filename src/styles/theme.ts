@@ -36,6 +36,18 @@ const theme = {
             fontSize: '16px',
             fontWeight: '600',
         },
+        logo: {
+            color: colors.white,
+            fontFamily: 'EB Garamond',
+            fontSize: '20px',
+            fontWeight: '400',
+        },
+        nav: {
+            color: colors.white,
+            fontFamily: 'Bitter',
+            fontSize: '14px',
+            fontWeight: '400',
+        },
         subtitle: {
             color: colors.white,
             fontFamily: 'Bitter',

@@ -8,6 +8,7 @@ interface NavigationListProps {
 
 const List = styled.div({
   display: "flex",
+  height: "100%",
   gap: `0px ${theme.space.medium}`,
 });
 

@@ -9,12 +9,19 @@ interface NavigationLogoProps {
 }
 
 const Label = styled.label({
-  marginLeft: theme.space.medium,
+  color: theme.text.logo.color,
+  cursor: "inherit",
+  fontFamily: theme.text.logo.fontFamily,
+  fontSize: theme.text.logo.fontSize,
+  fontWeight: theme.text.logo.fontWeight,
+  marginLeft: theme.space.small,
 });
 
 const Link = styled.a({
   alignItems: "center",
+  cursor: "pointer",
   display: "flex",
+  textDecoration: "none",
 });
 
 const LogoContainer = styled.div({
