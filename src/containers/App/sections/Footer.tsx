@@ -9,9 +9,17 @@ const FooterContainer = styled.footer({
   flexDirection: "row",
   marginTop: `${theme.space.large} 0`,
   width: "100%",
+  [theme.device.mobile]: {
+    flexDirection: "column",
+  },
 });
 
-const FooterEmpty = styled.div({ flex: 1 });
+const FooterEmpty = styled.div({
+  flex: 1,
+  [theme.device.mobile]: {
+    flex: 0,
+  },
+});
 
 const FooterIcon = styled.a({
   height: "48px",
@@ -23,6 +31,10 @@ const FooterPersonalData = styled.div({
   flex: 1,
   flexDirection: "column",
   width: "100%",
+  [theme.device.mobile]: {
+    alignItems: "center",
+    marginBottom: theme.space.medium,
+  },
 });
 
 const FooterSocials = styled.div({

@@ -12,6 +12,9 @@ const Content = styled.div({
   flexDirection: "row",
   justifyContent: "space-between",
   width: "100%",
+  [theme.device.mobile]: {
+    flexDirection: "column",
+  },
 });
 
 const HeadingQuartiary = styled.div({
@@ -30,12 +33,18 @@ const IllustrationPart = styled.div({
   display: "flex",
   height: "100%",
   width: "50%",
+  [theme.device.mobile]: {
+    width: "100%",
+  },
 });
 
 const TextPart = styled.div({
   display: "flex",
   flexDirection: "column",
   width: "50%",
+  [theme.device.mobile]: {
+    width: "100%",
+  },
 });
 
 const About = () => {

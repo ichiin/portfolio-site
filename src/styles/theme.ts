@@ -4,6 +4,10 @@ const theme = {
     background: {
         gradient: `linear-gradient(180deg, ${colors.black} 0%, ${colors.black_lighter} 100%)`,
     },
+    device: {
+        mobile: '@media (max-width: 650px)',
+        tablet: '@media (min-width: 651px) and (max-width: 850px)',
+    },
     space: {
         xsmall: '6px',
         small: '12px',

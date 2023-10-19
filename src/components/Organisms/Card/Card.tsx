@@ -16,6 +16,9 @@ const CardContainer = styled.div({
   display: "flex",
   flexDirection: "row",
   gap: theme.space.large,
+  [theme.device.mobile]: {
+    flexDirection: "column",
+  },
 });
 
 const Data = styled.div({

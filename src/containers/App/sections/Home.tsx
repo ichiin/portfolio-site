@@ -33,12 +33,24 @@ const IllustrationPart = styled.div({
   display: "flex",
   height: "100%",
   width: "60%",
+  [theme.device.tablet]: {
+    width: "50%",
+  },
+  [theme.device.mobile]: {
+    display: "none",
+  },
 });
 
 const TextPart = styled.div({
   display: "flex",
   flexDirection: "column",
   width: "40%",
+  [theme.device.tablet]: {
+    width: "50%",
+  },
+  [theme.device.mobile]: {
+    width: "100%",
+  },
 });
 
 const Home = () => {
