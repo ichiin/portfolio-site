@@ -2,7 +2,8 @@ import styled from "@emotion/styled";
 import IconLinkedin from "@/assets/linkedin_icon.svg?react";
 import IconGithub from "@/assets/github_icon.svg?react";
 import IconTwitter from "@/assets/twitter_x_icon.svg?react";
-import { theme } from "@/styles";
+import { colors, theme } from "@/styles";
+import { useTranslation } from "react-i18next";
 
 const FooterContainer = styled.footer({
   display: "flex",
@@ -26,6 +27,10 @@ const FooterIcon = styled.a({
   width: "48px",
 });
 
+const FooterMailTo = styled.a({
+  color: colors.white,
+});
+
 const FooterPersonalData = styled.div({
   display: "flex",
   flex: 1,
@@ -46,12 +51,15 @@ const FooterSocials = styled.div({
 });
 
 const Footer = () => {
+  const { t } = useTranslation();
   return (
-    <FooterContainer>
+    <FooterContainer id={t("Footer.id")}>
       <FooterPersonalData>
-        <span>Philippe Duval</span>
-        <span>home@philippeduval.dev</span>
-        <span>Made with ❤ @ Brest</span>
+        <span>{t("Footer.user")}</span>
+        <FooterMailTo href={`mailto:${t("Footer.mail")}`}>
+          {t("Footer.mail")}
+        </FooterMailTo>
+        <span>{t("Footer.love")}</span>
       </FooterPersonalData>
       <FooterSocials>
         <FooterIcon href='./'>

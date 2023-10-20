@@ -1,10 +1,10 @@
 import styled from "@emotion/styled";
 import { ReactNode } from "react";
-import theme from "../../../styles/theme";
+import { theme } from "@/styles";
 
 interface LabelProps {
   href: string;
-  icon: ReactNode;
+  icon?: ReactNode;
   label: string;
 }
 
@@ -34,7 +34,7 @@ const Label = ({ label, icon, href }: LabelProps) => {
   return (
     <LabelContainer>
       <LabelText>{label}</LabelText>
-      {href ? (
+      {icon && href ? (
         <LabelIconLink href={href}>{icon}</LabelIconLink>
       ) : (
         <LabelIcon>{icon}</LabelIcon>

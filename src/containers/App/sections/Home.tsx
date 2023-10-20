@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
 import ProgrammingIllustration from "@/assets/programming_illustration.svg?react";
 import { colors, theme } from "@/styles";
+import { useTranslation } from "react-i18next";
 
 const HeadingPrimary = styled.h1({
   fontFamily: theme.text.heading_1.fontFamily,
@@ -54,16 +55,18 @@ const TextPart = styled.div({
 });
 
 const Home = () => {
+  const { t } = useTranslation();
   return (
-    <HomeContainer>
+    <HomeContainer id={t("Home.id")}>
       <TextPart>
-        <HeadingTertiary>Hi,</HeadingTertiary>
+        <HeadingTertiary>{t("Home.greeting")}</HeadingTertiary>
         <HeadingPrimary>
-          I'm <HeadingPrimaryAccent>Philippe</HeadingPrimaryAccent>
+          {t("Home.userPronoun")}
+          <HeadingPrimaryAccent>{t("Home.userName")}</HeadingPrimaryAccent>
         </HeadingPrimary>
-        <HeadingTertiary>
-          Turning concepts into a <br /> code-driven reality.
-        </HeadingTertiary>
+        <HeadingTertiary
+          dangerouslySetInnerHTML={{ __html: t("Home.description") }}
+        ></HeadingTertiary>
       </TextPart>
       <IllustrationPart>
         <ProgrammingIllustration />

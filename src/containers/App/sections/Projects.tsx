@@ -6,6 +6,7 @@ import AsuraGatePreview from "@/assets/asura_gate_preview.png";
 import PersonalWebsitePreview from "@/assets/personal_website_preview.png";
 import NoImagePreview from "@/assets/no_image_preview.png";
 import BloodhuntCoinPreview from "@/assets/bloodhunt_coin_preview.png";
+import { useTranslation } from "react-i18next";
 
 const HeadingSecondary = styled.h2({
   fontFamily: theme.text.heading_2.fontFamily,
@@ -24,38 +25,40 @@ const ProjectList = styled.div({
   gap: theme.space.xlarge,
 });
 
+const formatStringToArray = (tags: string) => tags?.split(",");
+
 const Projects = () => {
+  const { t } = useTranslation();
   return (
-    <ProjectContainer>
-      <HeadingSecondary>Projects</HeadingSecondary>
+    <ProjectContainer id={t("Projects.id")}>
+      <HeadingSecondary>{t("Projects.title")}</HeadingSecondary>
       <ProjectList>
         <Card
-          href='./'
+          href={t("Projects.PersonalWebsite.href")}
           icon={<GithubIcon />}
-          label='Personal site'
+          label={t("Projects.PersonalWebsite.title")}
           src={PersonalWebsitePreview}
-          tags={["Figma", "React", "Typescript", "Vite", "Emotion"]}
+          tags={formatStringToArray(t("Projects.PersonalWebsite.tags"))}
         />
         <Card
-          href='./'
+          href={t("Projects.AsuraGate.href")}
           icon={<GithubIcon />}
-          label='Asura Gate'
+          label={t("Projects.AsuraGate.title")}
           src={AsuraGatePreview}
-          tags={["Figma", "React", "Typescript", "Vite", "Emotion"]}
+          tags={formatStringToArray(t("Projects.AsuraGate.tags"))}
         />
         <Card
-          href='./'
-          icon={<GithubIcon />}
-          label='Gotchat'
+          href={t("Projects.Gotchat.href")}
+          label={t("Projects.Gotchat.title")}
           src={NoImagePreview}
-          tags={["Figma", "React", "Typescript", "Vite", "Emotion"]}
+          tags={formatStringToArray(t("Projects.Gotchat.tags"))}
         />
         <Card
-          href='./'
+          href={t("Projects.CryptoManager.href")}
           icon={<GithubIcon />}
-          label='Custom cryptocurrency manager'
+          label={t("Projects.CryptoManager.title")}
           src={BloodhuntCoinPreview}
-          tags={["Figma", "React", "Typescript", "Vite", "Emotion"]}
+          tags={formatStringToArray(t("Projects.CryptoManager.tags"))}
         />
       </ProjectList>
     </ProjectContainer>

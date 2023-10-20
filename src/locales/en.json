@@ -1,3 +1,57 @@
 {
-    "title": "Welcome"
+    "Header": {
+        "aboutLabel": "About",
+        "homeLabel": "Home",
+        "logoLabel": "Philippe Duval",
+        "projectsLabel": "Projects"
+    },
+    "Home": {
+        "description": "Turning concepts <br /> into a code-driven reality.",
+        "greeting": "Hi,",
+        "id": "home",
+        "userName": "Philippe",
+        "userPronoun": "I'm "
+    },
+    "About": {
+        "id": "about",
+        "title": "About me",
+        "subtitle": "Bonjour !",
+        "firstParagraph": "My name is Philippe, a 28-year-old web developer hailing from the beautiful coastal town of Brest, France.",
+        "secondParagraph": "I'm passionate about enhancing user interfaces and crafting intuitive design systems that make digital experiences come to life. I'm an ardent believer in the power of continuous learning and the art of effective communication, values I hold dear in both my personal and professional journey.",
+        "thirdParagraph": "Beyond the screen, you'll find me pedaling through scenic routes or hitting the gym, feeding my love for fitness. I'm also an avid traveler, with an upcoming adventure to South Korea awaiting, where I can't wait to explore new horizons and immerse myself in the vibrant culture."
+    },
+    "Projects": {
+        "AsuraGate": {
+            "description": "",
+            "href": "./",
+            "tags": "Figma,React,TypeScript,Vite,Emotion",
+            "title": "Asura Gate"
+        },
+        "CryptoManager": {
+            "description": "",
+            "href": "./",
+            "tags": "Figma,React,TypeScript,Vite,Emotion",
+            "title": "Crypto currency manager - HNT token"
+        },
+        "Gotchat": {
+            "description": "",
+            "href": "./",
+            "tags": "Figma,React,TypeScript,Vite,Emotion",
+            "title": "Gotchat"
+        },
+        "PersonalWebsite": {
+            "description": "",
+            "href": "./",
+            "tags": "Figma,React,TypeScript,Vite,Emotion",
+            "title": "Personal site"
+        },
+        "id": "projects",
+        "title": "Projects"
+    },
+    "Footer": {
+        "id": "footer",
+        "love": "Made with ❤ @ Brest",
+        "mail": "home@philippeduval.dev",
+        "user": "Philippe Duval"
+    }
 }

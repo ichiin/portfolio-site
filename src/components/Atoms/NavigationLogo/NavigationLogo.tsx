@@ -15,6 +15,9 @@ const Label = styled.label({
   fontSize: theme.text.logo.fontSize,
   fontWeight: theme.text.logo.fontWeight,
   marginLeft: theme.space.small,
+  [theme.device.mobile_small]: {
+    display: "none",
+  },
 });
 
 const Link = styled.a({

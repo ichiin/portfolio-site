@@ -5,6 +5,7 @@ const theme = {
         gradient: `linear-gradient(180deg, ${colors.black} 0%, ${colors.black_lighter} 100%)`,
     },
     device: {
+        mobile_small: '@media (max-width: 450px)',
         mobile: '@media (max-width: 650px)',
         tablet: '@media (min-width: 651px) and (max-width: 850px)',
     },

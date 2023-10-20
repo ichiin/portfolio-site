@@ -6,7 +6,7 @@ import theme from "../../../styles/theme";
 
 interface CardProps {
   href: string;
-  icon: ReactNode;
+  icon?: ReactNode;
   label: string;
   src: string;
   tags: string[];

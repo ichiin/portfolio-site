@@ -4,7 +4,7 @@ import { NavigationItem, NavigationList, NavigationLogo } from "@/components";
 import { useTranslation } from "react-i18next";
 import { theme } from "@/styles";
 
-const Container = styled.header({
+const HeaderContainer = styled.header({
   alignItems: "center",
   display: "flex",
   justifyContent: "space-between",
@@ -15,16 +15,20 @@ const Container = styled.header({
 const Header = ({}) => {
   const { t } = useTranslation();
   return (
-    <Container>
-      <NavigationLogo href='/' label='Philippe Duval' logo={<Logo />} />
+    <HeaderContainer>
+      <NavigationLogo href='/' label={t("Header.logoLabel")} logo={<Logo />} />
       <NavigationList>
-        <NavigationItem highlight href='/'>
-          {t("title")}
+        <NavigationItem highlight href={`#${t("Home.id")}`}>
+          {t("Header.homeLabel")}
         </NavigationItem>
-        <NavigationItem href='/about'>About</NavigationItem>
-        <NavigationItem href='/projects'>Project</NavigationItem>
+        <NavigationItem href={`#${t("About.id")}`}>
+          {t("Header.aboutLabel")}
+        </NavigationItem>
+        <NavigationItem href={`#${t("Projects.id")}`}>
+          {t("Header.projectsLabel")}
+        </NavigationItem>
       </NavigationList>
-    </Container>
+    </HeaderContainer>
   );
 };
 

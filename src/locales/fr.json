@@ -1,3 +1,56 @@
 {
-    "title": "Bienvenue"
+    "Header": {
+        "aboutLabel": "À propos",
+        "aboutLink": "/a-propos",
+        "homeLabel": "Accueil",
+        "homeLink": "/accueil",
+        "logoLabel": "Philippe Duval",
+        "logoLink": "/",
+        "projectsLabel": "Projets",
+        "projectsLink": "/projets"
+    },
+    "Home": {
+        "description": "Transformer les idées <br /> en réalité à travers le code.",
+        "greeting": "Salut,",
+        "userName": "Philippe",
+        "userPronoun": "Moi c'est "
+    },
+    "About": {
+        "title": "À propos de moi",
+        "subtitle": "Bonjour !",
+        "firstParagraph": "Je m'appelle Philippe, un développeur web de 28 ans originaire de la belle ville côtière de Brest.",
+        "secondParagraph": "Je suis passionné par l'amélioration des interfaces utilisateur et la création de systèmes de conception intuitifs qui donnent vie aux expériences numériques. Je crois fermement au pouvoir de l'apprentissage continu et à l'art de la communication efficace, des valeurs qui me sont chères tant dans ma vie personnelle que professionnelle.",
+        "thirdParagraph": "Hors de l'écran, vous me trouverez en train de pédaler dans l'univers de Zwift ou bien en train de m'entraîner à la salle de sport. J'aime également beaucoup voyager, prochain arrêt en Corée du Sud, où j'ai hâte d'explorer de nouveaux horizons et de découvrir un nouveau pays et une nouvelle culture."
+    },
+    "Projects": {
+        "AsuraGate": {
+            "description": "",
+            "href": "./",
+            "tags": "Figma, React, TypeScript, Vite, Emotion",
+            "title": "Asura Gate"
+        },
+        "CryptoManager": {
+            "description": "",
+            "href": "./",
+            "tags": "Figma, React, TypeScript, Vite, Emotion",
+            "title": "Gestionnaire de crypto-monnaie - jeton HNT"
+        },
+        "Gotchat": {
+            "description": "",
+            "href": "./",
+            "tags": "Figma, React, TypeScript, Vite, Emotion",
+            "title": "Gotchat"
+        },
+        "PersonalWebsite": {
+            "description": "",
+            "href": "./",
+            "tags": "Figma, React, TypeScript, Vite, Emotion",
+            "title": "Site personnel"
+        }
+    },
+    "Footer": {
+        "love": "Fait avec ❤ @ Brest",
+        "mail": "home@philippeduval.dev",
+        "user": "Philippe Duval"
+    }
 }
