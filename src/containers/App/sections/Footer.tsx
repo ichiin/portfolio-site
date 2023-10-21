@@ -61,13 +61,16 @@ const Footer = () => {
         <span>{t("Footer.love")}</span>
       </FooterPersonalData>
       <FooterSocials>
-        <FooterIcon href='./'>
+        <FooterIcon
+          href='https://www.linkedin.com/in/phil-duval/'
+          target='_blank'
+        >
           <IconLinkedin />
         </FooterIcon>
-        <FooterIcon href='./'>
+        <FooterIcon href='https://github.com/ichiin' target='_blank'>
           <IconGithub />
         </FooterIcon>
-        <FooterIcon href='./'>
+        <FooterIcon href='https://twitter.com/PhilippeDuval18' target='_blank'>
           <IconX />
         </FooterIcon>
       </FooterSocials>
