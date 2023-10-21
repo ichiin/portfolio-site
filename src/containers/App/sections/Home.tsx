@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import ProgrammingIllustration from "@/assets/programming_illustration.svg?react";
+import { IllustrationProgramming } from "@/assets";
 import { colors, theme } from "@/styles";
 import { useTranslation } from "react-i18next";
 
@@ -69,7 +69,7 @@ const Home = () => {
         ></HeadingTertiary>
       </TextPart>
       <IllustrationPart>
-        <ProgrammingIllustration />
+        <IllustrationProgramming />
       </IllustrationPart>
     </HomeContainer>
   );

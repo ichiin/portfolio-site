@@ -1,11 +1,13 @@
 import styled from "@emotion/styled";
 import { theme } from "@/styles";
 import { Card } from "@/components";
-import GithubIcon from "@/assets/github_icon.svg?react";
-import AsuraGatePreview from "@/assets/asura_gate_preview.png";
-import PersonalWebsitePreview from "@/assets/personal_website_preview.png";
-import NoImagePreview from "@/assets/no_image_preview.png";
-import BloodhuntCoinPreview from "@/assets/bloodhunt_coin_preview.png";
+import {
+  IconGithub,
+  PreviewAsuraGate,
+  PreviewBloodhuntCoin,
+  PreviewNoImage,
+  PreviewPersonalWebsite,
+} from "@/assets";
 import { useTranslation } from "react-i18next";
 
 const HeadingSecondary = styled.h2({
@@ -35,29 +37,29 @@ const Projects = () => {
       <ProjectList>
         <Card
           href={t("Projects.PersonalWebsite.href")}
-          icon={<GithubIcon />}
+          icon={<IconGithub />}
           label={t("Projects.PersonalWebsite.title")}
-          src={PersonalWebsitePreview}
+          src={PreviewPersonalWebsite}
           tags={formatStringToArray(t("Projects.PersonalWebsite.tags"))}
         />
         <Card
           href={t("Projects.AsuraGate.href")}
-          icon={<GithubIcon />}
+          icon={<IconGithub />}
           label={t("Projects.AsuraGate.title")}
-          src={AsuraGatePreview}
+          src={PreviewAsuraGate}
           tags={formatStringToArray(t("Projects.AsuraGate.tags"))}
         />
         <Card
           href={t("Projects.Gotchat.href")}
           label={t("Projects.Gotchat.title")}
-          src={NoImagePreview}
+          src={PreviewNoImage}
           tags={formatStringToArray(t("Projects.Gotchat.tags"))}
         />
         <Card
           href={t("Projects.CryptoManager.href")}
-          icon={<GithubIcon />}
+          icon={<IconGithub />}
           label={t("Projects.CryptoManager.title")}
-          src={BloodhuntCoinPreview}
+          src={PreviewBloodhuntCoin}
           tags={formatStringToArray(t("Projects.CryptoManager.tags"))}
         />
       </ProjectList>

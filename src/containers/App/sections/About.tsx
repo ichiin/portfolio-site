@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import AstronautIllustration from "@/assets/astronaut_illustration.svg?react";
+import { IllustrationAstronaut } from "@/assets";
 import { theme } from "@/styles";
 import { useTranslation } from "react-i18next";
 
@@ -55,7 +55,7 @@ const About = () => {
       <HeadingSecondary>{t("About.title")}</HeadingSecondary>
       <Content>
         <IllustrationPart>
-          <AstronautIllustration />
+          <IllustrationAstronaut />
         </IllustrationPart>
         <TextPart>
           <HeadingQuartiary>{t("About.subtitle")}</HeadingQuartiary>

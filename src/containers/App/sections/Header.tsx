@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import Logo from "@/assets/logo.svg?react";
+import { IconBrand } from "@/assets";
 import { NavigationItem, NavigationList, NavigationLogo } from "@/components";
 import { useTranslation } from "react-i18next";
 import { theme } from "@/styles";
@@ -16,7 +16,11 @@ const Header = ({}) => {
   const { t } = useTranslation();
   return (
     <HeaderContainer>
-      <NavigationLogo href='/' label={t("Header.logoLabel")} logo={<Logo />} />
+      <NavigationLogo
+        href='/'
+        label={t("Header.logoLabel")}
+        logo={<IconBrand />}
+      />
       <NavigationList>
         <NavigationItem highlight href={`#${t("Home.id")}`}>
           {t("Header.homeLabel")}

@@ -1,7 +1,6 @@
 import styled from "@emotion/styled";
-import IconLinkedin from "@/assets/linkedin_icon.svg?react";
-import IconGithub from "@/assets/github_icon.svg?react";
-import IconTwitter from "@/assets/twitter_x_icon.svg?react";
+import { IconLinkedin, IconGithub, IconX } from "@/assets";
+
 import { colors, theme } from "@/styles";
 import { useTranslation } from "react-i18next";
 
@@ -69,7 +68,7 @@ const Footer = () => {
           <IconGithub />
         </FooterIcon>
         <FooterIcon href='./'>
-          <IconTwitter />
+          <IconX />
         </FooterIcon>
       </FooterSocials>
       <FooterEmpty></FooterEmpty>
