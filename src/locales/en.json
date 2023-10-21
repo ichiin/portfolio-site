@@ -22,28 +22,27 @@
     },
     "Projects": {
         "AsuraGate": {
-            "description": "",
-            "href": "./",
-            "tags": "Figma,React,TypeScript,Vite,Emotion",
+            "description": "This project started from the need to have as a video-game tournament organizer, a platform where I could easily manage the events : manage the registration process, submit the results and calculate the scoring automatically. After designing wireframes on Figma and determining the database schema and triggers, I moved onto making the system which was then used in those events. Moving forward, plans are to extend this back-end application with a front-end that would allow a player to view a list of events and have a global vision of what is happening in those.",
+            "href": "https://github.com/ichiin/tournament-randomizer",
+            "tags": "Figma,React,TypeScript,Vite,Emotion, Nodejs, mariaDB, SQL",
             "title": "Asura Gate"
         },
         "CryptoManager": {
-            "description": "",
-            "href": "./",
-            "tags": "Figma,React,TypeScript,Vite,Emotion",
+            "description": "This project is part of series of apps I made to learn about a few Web3 JS libraries. After deploying a smart contract on a testnet, I was able to use a simple web interface to manage a newly created token ! I was then able to transfer tokens from wallet to wallet or to burn them as my own liking.",
+            "href": "https://github.com/ichiin/bloodhuntCoin-manager",
+            "tags": "React,CRA,ethers.js",
             "title": "Crypto currency manager - HNT token"
         },
         "Gotchat": {
-            "description": "",
-            "href": "./",
-            "tags": "Figma,React,TypeScript,Vite,Emotion",
+            "description": "My first freelancing project, I worked on an account aggregator application for social media platforms. The objective of the application was to allow a user to be able to log onto multiple accounts through one connection and efficiently swap between accounts. Another requirement was a shared data pool as, the user could access pictures, chats or videos from all of its account to re-use them easily",
+            "tags": "Figma,React,CRA,Tailwind,Firebase",
             "title": "Gotchat"
         },
         "PersonalWebsite": {
-            "description": "",
-            "href": "./",
+            "description": "My latest project, I wanted to have a space out there where I could showcase my work and the latest ideas I'm working on. I started building the interface using Figma, determing the color palette and the general scheme I wanted to build. Afterwards, I moved to the editor to build the finished product you are watching now.",
+            "href": "https://github.com/ichiin/portfolio-site",
             "tags": "Figma,React,TypeScript,Vite,Emotion",
-            "title": "Personal site"
+            "title": "Personal website"
         },
         "id": "projects",
         "title": "Projects"

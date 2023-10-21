@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 import { IllustrationAstronaut } from "@/assets";
 import { theme } from "@/styles";
 import { useTranslation } from "react-i18next";
+import { forwardRef } from "react";
 
 const AboutContainer = styled.section({
   display: "flex",
@@ -48,10 +49,10 @@ const TextPart = styled.div({
   },
 });
 
-const About = () => {
+const About = forwardRef<HTMLDivElement>((_, ref) => {
   const { t } = useTranslation();
   return (
-    <AboutContainer id={t("About.id")}>
+    <AboutContainer id={t("About.id")} ref={ref}>
       <HeadingSecondary>{t("About.title")}</HeadingSecondary>
       <Content>
         <IllustrationPart>
@@ -66,6 +67,6 @@ const About = () => {
       </Content>
     </AboutContainer>
   );
-};
+});
 
 export default About;

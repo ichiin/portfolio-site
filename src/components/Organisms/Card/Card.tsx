@@ -5,6 +5,7 @@ import styled from "@emotion/styled";
 import { theme } from "@/styles";
 
 interface CardProps {
+  description: string;
   href: string;
   icon?: ReactNode;
   label: string;
@@ -48,7 +49,14 @@ const TagListContainer = styled.div({
   marginBottom: theme.space.medium,
 });
 
-const Card = ({ href, icon, label, src = PreviewNoImage, tags }: CardProps) => {
+const Card = ({
+  description,
+  href,
+  icon,
+  label,
+  src = PreviewNoImage,
+  tags,
+}: CardProps) => {
   return (
     <CardContainer>
       <PreviewContainer>
@@ -61,11 +69,7 @@ const Card = ({ href, icon, label, src = PreviewNoImage, tags }: CardProps) => {
         <TagListContainer>
           <TagList tags={tags} />
         </TagListContainer>
-        <p>
-          Solution made to make the management of tournaments easier. After
-          logging in, an organizer can easily manage registrations and results
-          of his ongoing events
-        </p>
+        <p>{description}</p>
       </Data>
     </CardContainer>
   );

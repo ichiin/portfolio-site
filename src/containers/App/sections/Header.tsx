@@ -9,6 +9,10 @@ import {
 import { useTranslation } from "react-i18next";
 import { theme } from "@/styles";
 
+interface HeaderProps {
+  highlight: string;
+}
+
 const HeaderContainer = styled.header({
   alignItems: "center",
   display: "flex",
@@ -29,7 +33,7 @@ const NavigationContainer = styled.div({
   justifyContent: "space-between",
 });
 
-const Header = ({}) => {
+const Header = ({ highlight }: HeaderProps) => {
   const { t, i18n } = useTranslation();
   const iconFlag = i18n.language === "fr" ? FlagFrance : FlagGreatBritain;
 
@@ -46,13 +50,22 @@ const Header = ({}) => {
           logo={<IconBrand />}
         />
         <NavigationList>
-          <NavigationItem highlight href={`#${t("Home.id")}`}>
+          <NavigationItem
+            highlight={highlight === t("Home.id")}
+            href={`#${t("Home.id")}`}
+          >
             {t("Header.homeLabel")}
           </NavigationItem>
-          <NavigationItem href={`#${t("About.id")}`}>
+          <NavigationItem
+            highlight={highlight === t("About.id")}
+            href={`#${t("About.id")}`}
+          >
             {t("Header.aboutLabel")}
           </NavigationItem>
-          <NavigationItem href={`#${t("Projects.id")}`}>
+          <NavigationItem
+            highlight={highlight === t("Projects.id")}
+            href={`#${t("Projects.id")}`}
+          >
             {t("Header.projectsLabel")}
           </NavigationItem>
         </NavigationList>

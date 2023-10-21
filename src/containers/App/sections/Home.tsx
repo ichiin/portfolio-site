@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 import { IllustrationProgramming } from "@/assets";
 import { colors, theme } from "@/styles";
 import { useTranslation } from "react-i18next";
+import { forwardRef } from "react";
 
 const HeadingPrimary = styled.h1({
   fontFamily: theme.text.heading_1.fontFamily,
@@ -54,10 +55,10 @@ const TextPart = styled.div({
   },
 });
 
-const Home = () => {
+const Home = forwardRef<HTMLDivElement>((_, ref) => {
   const { t } = useTranslation();
   return (
-    <HomeContainer id={t("Home.id")}>
+    <HomeContainer id={t("Home.id")} ref={ref}>
       <TextPart>
         <HeadingTertiary>{t("Home.greeting")}</HeadingTertiary>
         <HeadingPrimary>
@@ -73,6 +74,6 @@ const Home = () => {
       </IllustrationPart>
     </HomeContainer>
   );
-};
+});
 
 export default Home;
