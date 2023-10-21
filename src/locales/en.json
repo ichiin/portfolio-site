@@ -24,7 +24,7 @@
         "AsuraGate": {
             "description": "This project started from the need to have as a video-game tournament organizer, a platform where I could easily manage the events : manage the registration process, submit the results and calculate the scoring automatically. After designing wireframes on Figma and determining the database schema and triggers, I moved onto making the system which was then used in those events. Moving forward, plans are to extend this back-end application with a front-end that would allow a player to view a list of events and have a global vision of what is happening in those.",
             "href": "https://github.com/ichiin/tournament-randomizer",
-            "tags": "Figma,React,TypeScript,Vite,Emotion, Nodejs, mariaDB, SQL",
+            "tags": "Figma,React,TypeScript,Vite,Emotion,Nodejs,mariaDB,SQL",
             "title": "Asura Gate"
         },
         "CryptoManager": {
