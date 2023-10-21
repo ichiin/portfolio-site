@@ -1,14 +1,14 @@
 import { ReactNode } from "react";
-import Label from "../../Atoms/Label/Label";
-import TagList from "../../Molecules/TagList/TagList";
+import { Label, TagList } from "@/components";
+import { PreviewNoImage } from "@/assets";
 import styled from "@emotion/styled";
-import theme from "../../../styles/theme";
+import { theme } from "@/styles";
 
 interface CardProps {
   href: string;
   icon?: ReactNode;
   label: string;
-  src: string;
+  src?: string;
   tags: string[];
 }
 
@@ -48,7 +48,7 @@ const TagListContainer = styled.div({
   marginBottom: theme.space.medium,
 });
 
-const Card = ({ href, icon, label, src, tags }: CardProps) => {
+const Card = ({ href, icon, label, src = PreviewNoImage, tags }: CardProps) => {
   return (
     <CardContainer>
       <PreviewContainer>

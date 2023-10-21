@@ -1,6 +1,5 @@
 import { colors, theme } from "@/styles";
 import styled from "@emotion/styled";
-import { relative } from "path";
 
 interface LinkProps {
   highlight?: boolean;

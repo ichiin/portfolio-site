@@ -5,7 +5,6 @@ import {
   IconGithub,
   PreviewAsuraGate,
   PreviewBloodhuntCoin,
-  PreviewNoImage,
   PreviewPersonalWebsite,
 } from "@/assets";
 import { useTranslation } from "react-i18next";
@@ -52,7 +51,6 @@ const Projects = () => {
         <Card
           href={t("Projects.Gotchat.href")}
           label={t("Projects.Gotchat.title")}
-          src={PreviewNoImage}
           tags={formatStringToArray(t("Projects.Gotchat.tags"))}
         />
         <Card
