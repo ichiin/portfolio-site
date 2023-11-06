@@ -19,6 +19,7 @@ const HeadingSecondary = styled.h2({
 const ProjectContainer = styled.section({
   display: "flex",
   flexDirection: "column",
+  width: "100%",
 });
 
 const ProjectList = styled.div({

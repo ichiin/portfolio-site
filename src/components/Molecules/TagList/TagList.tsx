@@ -10,6 +10,10 @@ interface TagListProps {
 const TagListContainer = styled.div({
   display: "flex",
   gap: `0px ${theme.space.medium}`,
+  [theme.device.mobile]: {
+    flexWrap: "wrap",
+    gap: `8px ${theme.space.medium}`,
+  },
 });
 
 const TagList = ({ tags }: TagListProps) => {
