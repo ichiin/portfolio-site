@@ -25,7 +25,10 @@ const CardContainer = styled.div({
 const Data = styled.div({
   display: "flex",
   flexDirection: "column",
-  flex: 1,
+  width: "50%",
+  [theme.device.mobile]: {
+    width: "100%",
+  },
 });
 
 const LabelContainer = styled.div({
